@@ -3,10 +3,10 @@ name: Cypress Tests
 on:
   push:
     branches:
-      - main
+      - amazon
   pull_request:
     branches:
-      - main
+      - amazon
 
 jobs:
   cypress-run:
@@ -25,7 +25,7 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm Install
 
       # Run Cypress tests on Chrome headless
       - name: Run Cypress tests
