@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+   projectId: 'if81r6', // from Cypress Cloud
   defaultCommandTimeout: 10000,
   defaultBrowser: "chrome",
   pageLoadTimeout: 120000,
